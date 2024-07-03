@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.navbar-custom {
+    background-color: #292b2c;
+    color: goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+#logo {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.proicon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.loginz {
+    color: green; /* Added to display the courier's name in green */
+    margin-left: 10px; /* Added margin to separate the name from the links */
+}
+
+.navbar-nav {
+    display: flex; /* Ensure navbar items are displayed in a single line */
+    align-items: center; /* Center vertically */
+}
+
+.nav-item {
+    margin-left: 10px; /* Add some space between navbar items */
+}
+
+.nav-link {
+    color: goldenrod; /* Set link color */
+    text-decoration: none; /* Remove default underline */
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+.nav-link:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+/* Main Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.orders {
+    margin-bottom: 30px;
+}
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.order-item h2 {
+    margin-bottom: 10px;
+}
+
+.order-item p {
+    margin-bottom: 5px;
+}
+
+.accept-btn {
+    background-color: #00b300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.accept-btn:hover {
+    background-color: #009900;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 767px) {
+    .navbar-brand {
+        justify-content: center;
+    }
+    #logo {
+        display: none;
+    }
+    .proicon {
+        margin-right: 0;
+    }
+}
